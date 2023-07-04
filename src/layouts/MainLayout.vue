@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header class="sticky">
+    <q-header>
       <q-toolbar>
         <div class="mobile-menu-btn">
           <q-btn
