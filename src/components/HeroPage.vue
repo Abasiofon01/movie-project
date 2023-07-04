@@ -1,57 +1,58 @@
 <template lang="">
   <section class="hero">
-    <video controls muted autoplay loop id="myVideo">
-      <source
-        src="../assets/the-equaliser.mp4"
-        type="video/mp4"
-        @canplay="updatePaused"
-        @playing="updatePaused"
-        @pause="updatePaused"
-        ref="video_player"
-      />
-      Your browser does not support the video.
-    </video>
-
+    <div class="video-wrapper">
+      <video controls muted autoplay loop id="myVideo">
+        <source
+          src="../assets/the-equaliser.mp4"
+          type="video/mp4"
+          @canplay="updatePaused"
+          @playing="updatePaused"
+          @pause="updatePaused"
+          ref="video_player"
+        />
+        Your browser does not support the video.
+      </video>
+    </div>
     <div class="hero-content">
-      <p class="hero-subtitle">Movies</p>
+      <div class="title-and-btn-wrapper">
+        <span class="h1 hero-title">
+          Unlimited <strong>Movies</strong>, TVs Shows, & More.
+        </span>
 
-      <h1 class="h1 hero-title">
-        Unlimited <strong>Movies</strong>, TVs Shows, & More.
-      </h1>
+        <div class="meta-wrapper">
+          <div class="badge-wrapper">
+            <div class="badge badge-fill">PG 18</div>
 
-      <div class="meta-wrapper">
-        <div class="badge-wrapper">
-          <div class="badge badge-fill">PG 18</div>
-
-          <div class="badge badge-outline">HD</div>
-        </div>
-
-        <div class="genre-wrapper">
-          <a href="#">Romance,</a>
-
-          <a href="#">Drama</a>
-        </div>
-
-        <div class="date-time">
-          <div>
-            <ion-icon name="calendar-outline"></ion-icon>
-
-            <time datetime="2022">2022</time>
+            <div class="badge badge-outline">HD</div>
           </div>
 
-          <div>
-            <ion-icon name="time-outline"></ion-icon>
+          <div class="genre-wrapper">
+            <a href="#">Romance,</a>
 
-            <time datetime="PT128M">128 min</time>
+            <a href="#">Drama</a>
+          </div>
+
+          <div class="date-time">
+            <div>
+              <q-icon name="calendar-outline"></q-icon>
+
+              <time datetime="2022">2022</time>
+            </div>
+
+            <div>
+              <ion-icon name="time-outline"></ion-icon>
+
+              <time datetime="PT128M">128 min</time>
+            </div>
           </div>
         </div>
+
+        <button class="btn btn-primary">
+          <q-icon name="play"></q-icon>
+
+          <span>Watch now</span>
+        </button>
       </div>
-
-      <button class="btn btn-primary">
-        <ion-icon name="play"></ion-icon>
-
-        <span>Watch now</span>
-      </button>
     </div>
     <div class="video-play-pause-wrapper">
       <q-btn
