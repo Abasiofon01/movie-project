@@ -78,27 +78,27 @@ export default defineComponent({
       return [
         {
           title: "Home",
-          route: "home",
+          route: "#",
         },
         {
           title: "Movie",
-          route: "home",
+          route: "#",
         },
         {
           title: "Tv Show",
-          route: "home",
+          route: "#",
         },
         {
           title: "Popular",
-          route: "home",
+          route: "#",
         },
         {
           title: "Genre",
-          route: "home",
+          route: "#",
         },
         {
           title: "Upcoming",
-          route: "home",
+          route: "#",
         },
       ];
     },

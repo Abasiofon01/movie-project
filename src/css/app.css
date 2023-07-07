@@ -9,5 +9,8 @@ body {
   padding: 1.5rem;
 }
 
+.q-drawer .q-item__label--header {
+  color: hsl(57, 97%, 45%) !important;
+}
 /* .page-wrapper {
 } */
