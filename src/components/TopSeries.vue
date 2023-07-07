@@ -19,12 +19,8 @@
           <q-card-section>
             <div class="movie-title-wrapper">
               <span class="card-title">{{ movie.name }}</span>
-              <!-- <time datetime="2022">{{
-                movie.release_date.substring(0, 4)
-              }}</time> -->
-
-              <time datetime="2022">{{
-                movie.first_air_date.replace(/^(.{7}).*/, "$1")
+              <time datetime="">{{
+                movie.first_air_date.substring(0, 4)
               }}</time>
             </div>
           </q-card-section>
