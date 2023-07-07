@@ -9,8 +9,16 @@ body {
   padding: 1.5rem;
 }
 
+.q-drawer {
+  background-color: #14532d;
+}
+
+.q-item__label {
+  color: white;
+}
 .q-drawer .q-item__label--header {
-  color: hsl(57, 97%, 45%) !important;
+  color: #22c55e !important;
+  font-size: 1.2rem;
 }
 /* .page-wrapper {
 } */

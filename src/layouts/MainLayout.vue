@@ -12,6 +12,17 @@
             aria-label="Menu"
             @click="toggleLeftDrawer"
           />
+
+          <q-input
+            standout
+            v-model="text"
+            placeholder="Search any movie..."
+            dense
+          >
+            <template v-slot:append>
+              <q-icon name="search" color="white" />
+            </template>
+          </q-input>
         </div>
         <div class="gt-xs desktop-links">
           <!-- <q-avatar>
@@ -26,17 +37,16 @@
             </span>
           </div>
 
-          <div class="action-buttons">
-            <q-input
-              required
-              color="teal"
-              bg-color="white"
-              outlined
-              dense
-              placeholder="Search any movie..."
-            >
-            </q-input>
-          </div>
+          <q-input
+            standout
+            v-model="text"
+            placeholder="Search any movie..."
+            dense
+          >
+            <template v-slot:append>
+              <q-icon name="search" color="white" />
+            </template>
+          </q-input>
         </div>
       </q-toolbar>
     </q-header>
