@@ -1,23 +1,19 @@
 <template lang="">
   <section class="service">
     <div class="container">
-      <div class="service-banner">
-        <img
-          src="../assets/images/service-banner.jpg"
-          alt="HD 4k resolution! only $3.99"
-        />
-      </div>
-
       <div class="service-content">
-        <p class="service-subtitle">Our Services</p>
+        <div class="text-wrapper">
+          <p class="service-subtitle">Our Services</p>
 
-        <h2 class="h2 service-title">Download Your Shows Watch Offline.</h2>
+          <h2 class="h2 service-title">Download Your Shows Watch Offline.</h2>
 
-        <p class="service-text">
-          Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod
-          tempor.There are many variations of passages of lorem Ipsum available,
-          but the majority have suffered alteration in some injected humour.
-        </p>
+          <p class="service-text">
+            Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod
+            tempor.There are many variations of passages of lorem Ipsum
+            available, but the majority have suffered alteration in some
+            injected humour.
+          </p>
+        </div>
 
         <div class="service-list">
           <div class="service-card">
