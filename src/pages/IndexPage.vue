@@ -6,7 +6,7 @@
     <ServicesSection />
     <TopRated />
     <TopSeries />
-    <CTA />
+
     <FooterSection />
 
     <q-page-scroller
@@ -17,7 +17,7 @@
       <q-btn
         fab
         icon="keyboard_arrow_up"
-        style="background-color: hsl(57, 97%, 45%); color: white"
+        style="background-color: #22c55e; color: white"
       />
     </q-page-scroller>
   </q-page>
@@ -25,7 +25,6 @@
 
 <script>
 import { defineComponent } from "vue";
-import CTA from "src/components/CTA.vue";
 import HeroPage from "src/components/HeroPage.vue";
 // import PopularMovies from "src/components/PopularMovies.vue";
 import TopRated from "src/components/TopRated.vue";
@@ -42,7 +41,7 @@ export default defineComponent({
     ServicesSection,
     TopRated,
     TopSeries,
-    CTA,
+
     // PopularMovies,
     FooterSection,
   },

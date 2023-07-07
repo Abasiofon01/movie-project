@@ -27,8 +27,15 @@
           </div>
 
           <div class="action-buttons">
-            <q-icon size="sm" name="search"></q-icon>
-            <q-btn label="Sign In"></q-btn>
+            <q-input
+              required
+              color="teal"
+              bg-color="white"
+              outlined
+              dense
+              placeholder="Search any movie..."
+            >
+            </q-input>
           </div>
         </div>
       </q-toolbar>
