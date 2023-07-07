@@ -13,7 +13,8 @@
   --gunmetal-1: hsl(229, 15%, 21%);
   --gunmetal-2: hsl(216, 22%, 18%);
   --gainsboro: hsl(0, 7%, 88%);
-  --citrine: hsl(57, 97%, 45%);
+  // --citrine: hsl(57, 97%, 45%);
+  --green: #22c55e;
   --xiketic: hsl(253, 21%, 13%);
   --gray-x: hsl(0, 0%, 74%);
   --white: hsl(0, 100%, 100%);
@@ -91,7 +92,7 @@ body {
 }
 
 .section-subtitle {
-  color: var(--citrine);
+  color: var(--green);
   font-size: var(--fs-11);
   font-weight: var(--fw-500);
   text-transform: uppercase;
@@ -151,7 +152,7 @@ body {
 }
 
 .genre-wrapper > a:is(:hover, :focus) {
-  color: var(--citrine);
+  color: var(--green);
 }
 
 .date-time {
@@ -169,7 +170,7 @@ body {
 
 .date-time .q-icon {
   --ionicon-stroke-width: 50px;
-  color: var(--citrine);
+  color: var(--green);
 }
 
 /**
@@ -186,7 +187,7 @@ body {
   align-items: center;
   gap: 10px;
   padding: 16px 30px;
-  border: 2px solid var(--citrine);
+  border: 2px solid var(--green);
   border-radius: 50px;
   transition: var(--transition-1);
 }
@@ -200,7 +201,7 @@ body {
 }
 
 .btn-primary:is(:hover, :focus) {
-  background: var(--citrine);
+  background: var(--green);
   color: var(--xiketic);
 }
 
@@ -231,7 +232,7 @@ body {
       justify-content: space-between;
 
       .toolbar-title {
-        color: var(--citrine);
+        color: var(--green);
         font-size: 1.25rem;
         font-weight: 600;
       }
@@ -240,7 +241,7 @@ body {
         align-items: center;
         gap: 1.5rem;
         .q-btn {
-          border: 1px solid var(--citrine);
+          border: 1px solid var(--green);
         }
       }
 
@@ -254,7 +255,7 @@ body {
       font-weight: 500;
     }
     .nav-links-wrapper span > a:is(:hover, :focus) {
-      color: var(--citrine) !important;
+      color: var(--green) !important;
     }
   }
 }
@@ -285,7 +286,7 @@ body {
       font-weight: 600;
 
       strong {
-        color: var(--citrine);
+        color: var(--green);
       }
     }
   }
@@ -294,14 +295,14 @@ body {
     align-items: center;
     gap: 1rem;
     position: absolute;
-    bottom: 3%;
+    bottom: 25%;
     left: 2%;
   }
 }
 
 .movies-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 
   .movie-card {
@@ -366,7 +367,7 @@ body {
       gap: 18px;
 
       time {
-        color: var(--citrine);
+        color: var(--green);
         font-size: var(--fs-9);
         font-weight: var(--fw-500);
       }
@@ -380,7 +381,7 @@ body {
     }
 
     .card-title:is(:hover, :focus) {
-      color: var(--citrine);
+      color: var(--green);
     }
 
     .card-meta {
@@ -391,7 +392,7 @@ body {
     }
 
     .badge {
-      color: var(--citrine);
+      color: var(--green);
     }
 
     .duration {
@@ -411,7 +412,7 @@ body {
   .movie-card :is(.duration, .rating) .q-icon {
     font-size: 16px;
     --ionicon-stroke-width: 50px;
-    color: var(--citrine);
+    color: var(--green);
   }
 }
 
@@ -472,7 +473,7 @@ body {
   }
 }
 .upcoming .filter-btn:focus {
-  border-color: var(--citrine);
+  border-color: var(--green);
 }
 
 .service {
@@ -522,7 +523,7 @@ body {
       left: 0;
       width: 40px;
       height: 3px;
-      background: var(--citrine);
+      background: var(--green);
     }
 
     .service-title {
@@ -561,7 +562,7 @@ body {
         place-items: center;
         font-size: 40px;
         border-radius: 50%;
-        outline: 1px dashed var(--citrine);
+        outline: 1px dashed var(--green);
         outline-offset: 5px;
         margin: 5px;
         margin-bottom: 20px;
@@ -572,7 +573,7 @@ body {
       }
     }
     .service-card:hover .card-icon {
-      background: var(--citrine);
+      background: var(--green);
     }
   }
 }
@@ -614,11 +615,11 @@ body {
 }
 
 .filter-btn:focus {
-  color: var(--citrine);
+  color: var(--green);
   text-shadow: 0 3px 25px hsla(57, 97%, 45%, 0.5);
 }
 .q-btn.filter-btn:hover {
-  color: var(--citrine);
+  color: var(--green);
 }
 
 .tv-series {
@@ -690,7 +691,7 @@ body {
 
   .cta-form-btn {
     background: var(--eerie-black);
-    color: var(--citrine);
+    color: var(--green);
     font-size: var(--fs-9);
     font-weight: var(--fw-700);
     letter-spacing: 1px;
@@ -702,7 +703,7 @@ body {
   }
 
   .cta-form-btn:is(:hover, :focus) {
-    background: var(--citrine);
+    background: var(--green);
     color: var(--eerie-black);
   }
 }
@@ -740,7 +741,7 @@ footer {
     transition: var(--transition-1);
   }
   :is(.footer-link, .quicklink, .social-link):is(:hover, :focus) {
-    color: var(--citrine);
+    color: var(--green);
   }
 }
 
@@ -804,6 +805,6 @@ footer {
 
   .copyright > a {
     display: inline-block;
-    color: var(--citrine);
+    color: var(--green);
   }
 }
