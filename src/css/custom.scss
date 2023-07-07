@@ -690,7 +690,6 @@ footer {
   .social-link {
     background: var(--rich-black-fogra-29);
     color: var(--gray-x);
-    font-size: clamp(0.625rem, 0.5893rem + 0.2286vw, 0.875rem);
     width: 35px;
     height: 35px;
     display: grid;
@@ -700,7 +699,7 @@ footer {
     transition: var(--transition-1);
 
     .q-icon {
-      font-size: 20px;
+      font-size: clamp(1rem, 0.9643rem + 0.2286vw, 1.25rem);
     }
   }
 
