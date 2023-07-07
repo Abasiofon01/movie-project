@@ -210,13 +210,15 @@ body {
   // padding-block: 25px;
   transition: var(--transition-2);
   z-index: 4;
-  height: var(--header-height);
+  // height: var(--header-height);
   background: rgba(0, 0, 0, 0);
 
   .q-toolbar {
     display: block;
     padding: 1.5rem;
-
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
     .mobile-menu-btn {
       @media (min-width: 768.99px) {
         display: none;
@@ -258,31 +260,16 @@ body {
 }
 
 .hero {
-  position: relative;
-  // height: 80vh;
-  // height: calc(100vh - var(--header-height));
-
-  #myVideo {
-    height: auto;
-    width: 100%;
-  }
   .video-wrapper {
-    position: absolute;
-    height: 100%;
-  }
-  .video-play-pause-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
     position: relative;
-    bottom: 5%;
-    left: 2%;
+    #myVideo {
+      height: auto;
+      width: 100%;
+    }
   }
+
   .hero-content {
-    position: relative;
-    bottom: 0;
     padding: 1.5rem;
-    height: inherit;
     background: rgba(0, 0, 0, 0.536);
     color: #f1f1f1;
     width: 100%;
@@ -301,6 +288,14 @@ body {
         color: var(--citrine);
       }
     }
+  }
+  .video-play-pause-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
   }
 }
 

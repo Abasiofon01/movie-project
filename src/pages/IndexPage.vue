@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <PopularMovies />
+    <!-- <PopularMovies /> -->
     <HeroPage />
     <UpcomingMovies />
     <ServicesSection />
@@ -27,7 +27,7 @@
 import { defineComponent } from "vue";
 import CTA from "src/components/CTA.vue";
 import HeroPage from "src/components/HeroPage.vue";
-import PopularMovies from "src/components/PopularMovies.vue";
+// import PopularMovies from "src/components/PopularMovies.vue";
 import TopRated from "src/components/TopRated.vue";
 import TopSeries from "src/components/TopSeries.vue";
 import FooterSection from "src/components/FooterSection.vue";
@@ -43,7 +43,7 @@ export default defineComponent({
     TopRated,
     TopSeries,
     CTA,
-    PopularMovies,
+    // PopularMovies,
     FooterSection,
   },
 });

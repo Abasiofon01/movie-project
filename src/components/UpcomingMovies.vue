@@ -62,8 +62,8 @@
   </section>
 </template>
 <script>
-import { ref, onMounted, computed } from "vue";
-import { useFetchMovies } from "../stores/store";
+import { onMounted, computed } from "vue";
+import { useFetchMovies } from "../stores/MoviesStore";
 import PosterImage from "./PosterImage.vue";
 
 export default {

@@ -6,15 +6,26 @@
       <span class="h2 section-title">World Best TV Series</span>
 
       <div class="movies-list">
-        <q-card flat class="movie-card">
+        <q-card
+          flat
+          class="movie-card"
+          v-for="movie in getTopRatedSeries"
+          :key="movie.title"
+        >
           <div class="card-banner">
-            <img src="../assets//images//upcoming-1.png" />
+            <PosterImage :path="movie.poster_path" />
           </div>
 
           <q-card-section>
             <div class="movie-title-wrapper">
-              <span class="card-title">The Northman</span>
-              <time datetime="2022">2022</time>
+              <span class="card-title">{{ movie.title }}</span>
+              <!-- <time datetime="2022">{{
+                movie.release_date.substring(0, 4)
+              }}</time> -->
+
+              <time datetime="2022">{{
+                movie.first_air_date.replace(/^(.{7}).*/, "$1")
+              }}</time>
             </div>
           </q-card-section>
 
@@ -30,91 +41,7 @@
             <div class="rating">
               <q-icon name="star"></q-icon>
 
-              <data>8.5</data>
-            </div>
-          </q-card-section>
-        </q-card>
-        <q-card flat class="movie-card">
-          <div class="card-banner">
-            <img src="../assets//images//upcoming-1.png" />
-          </div>
-
-          <q-card-section>
-            <div class="movie-title-wrapper">
-              <span class="card-title">The Northman</span>
-              <time datetime="2022">2022</time>
-            </div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none card-meta">
-            <div class="badge badge-outline">HD</div>
-
-            <div class="duration">
-              <q-icon name="las la-clock"></q-icon>
-
-              <time datetime="PT137M">137 min</time>
-            </div>
-
-            <div class="rating">
-              <q-icon name="star"></q-icon>
-
-              <data>8.5</data>
-            </div>
-          </q-card-section>
-        </q-card>
-        <q-card flat class="movie-card">
-          <div class="card-banner">
-            <img src="../assets//images//upcoming-1.png" />
-          </div>
-
-          <q-card-section>
-            <div class="movie-title-wrapper">
-              <span class="card-title">The Northman</span>
-              <time datetime="2022">2022</time>
-            </div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none card-meta">
-            <div class="badge badge-outline">HD</div>
-
-            <div class="duration">
-              <q-icon name="las la-clock"></q-icon>
-
-              <time datetime="PT137M">137 min</time>
-            </div>
-
-            <div class="rating">
-              <q-icon name="star"></q-icon>
-
-              <data>8.5</data>
-            </div>
-          </q-card-section>
-        </q-card>
-        <q-card flat class="movie-card">
-          <div class="card-banner">
-            <img src="../assets//images//upcoming-1.png" />
-          </div>
-
-          <q-card-section>
-            <div class="movie-title-wrapper">
-              <span class="card-title">The Northman</span>
-              <time datetime="2022">2022</time>
-            </div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none card-meta">
-            <div class="badge badge-outline">HD</div>
-
-            <div class="duration">
-              <q-icon name="las la-clock"></q-icon>
-
-              <time datetime="PT137M">137 min</time>
-            </div>
-
-            <div class="rating">
-              <q-icon name="star"></q-icon>
-
-              <data>8.5</data>
+              <data>{{ movie.vote_average }}</data>
             </div>
           </q-card-section>
         </q-card>
@@ -123,7 +50,26 @@
   </section>
 </template>
 <script>
+import { onMounted, computed } from "vue";
+import { useFetchSeries } from "../stores/MoviesStore";
+import PosterImage from "./PosterImage.vue";
+
 export default {
-  name: "TopSeries",
+  components: {
+    PosterImage,
+  },
+  setup() {
+    const store = useFetchSeries();
+    const getTopRatedSeries = computed(() => store.getTopRatedSeries);
+
+    onMounted(() => {
+      store.fetchTopRatedSeries();
+    });
+
+    return {
+      getTopRatedSeries,
+      PosterImage,
+    };
+  },
 };
 </script>
