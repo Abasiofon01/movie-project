@@ -20,5 +20,7 @@ body {
   color: #22c55e !important;
   font-size: 1.2rem;
 }
-/* .page-wrapper {
-} */
+.q-page {
+  max-width: 1440px;
+  margin: 0 auto;
+}

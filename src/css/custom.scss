@@ -215,6 +215,8 @@ body {
   z-index: 4;
   // height: var(--header-height);
   background: rgba(0, 0, 0, 0.732);
+  max-width: 1440px;
+  margin: 0 auto;
 
   .q-toolbar {
     display: block;
@@ -420,8 +422,10 @@ body {
 }
 
 .upcoming {
-  background: url("../assets/images/upcoming-bg.png") no-repeat;
+  background: url("../assets/images/hero-bg.jpg") no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.637);
+  background-blend-mode: darken;
   background-position: center;
   position: relative;
   // height: 100vh;
@@ -476,7 +480,7 @@ body {
 }
 
 .service {
-  background: url("../images/service-bg.jpg") no-repeat;
+  background: url("../assets/images/service-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -572,7 +576,7 @@ body {
 }
 
 .top-rated {
-  background: url("../images/top-rated-bg.jpg") no-repeat;
+  background: url("../assets/images/top-rated-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -615,7 +619,7 @@ body {
 }
 
 .tv-series {
-  background: url("../images/tv-series-bg.jpg") no-repeat;
+  background: url("../assets/images/tv-series-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -633,7 +637,7 @@ body {
 
 footer {
   .footer-top {
-    background: url("../images/footer-bg.jpg") no-repeat;
+    background: url("../assets/images/footer-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     padding-block: 50px 10px;
