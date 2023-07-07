@@ -10,7 +10,7 @@
           flat
           class="movie-card"
           v-for="movie in getTopRatedSeries"
-          :key="movie.title"
+          :key="movie.name"
         >
           <div class="card-banner">
             <PosterImage :path="movie.poster_path" />
@@ -18,7 +18,7 @@
 
           <q-card-section>
             <div class="movie-title-wrapper">
-              <span class="card-title">{{ movie.title }}</span>
+              <span class="card-title">{{ movie.name }}</span>
               <!-- <time datetime="2022">{{
                 movie.release_date.substring(0, 4)
               }}</time> -->
