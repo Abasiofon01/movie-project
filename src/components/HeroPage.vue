@@ -59,7 +59,6 @@
           round
           :size="$q.screen.lt.md ? 'sm' : 'md'"
           icon="play_arrow"
-          color="red"
           v-show="paused"
           @click="play"
         ></q-btn>
@@ -67,9 +66,15 @@
           round
           icon="pause"
           :size="$q.screen.lt.md ? 'sm' : 'md'"
-          color="red"
           v-show="playing"
           @click="pause"
+        ></q-btn>
+
+        <q-btn
+          round
+          :size="$q.screen.lt.md ? 'sm' : 'md'"
+          :icon="isMuted ? 'volume_off' : 'volume_up'"
+          @click="toggleMute"
         ></q-btn>
       </div>
     </div>
@@ -84,6 +89,7 @@ export default {
     return {
       videoElement: null,
       paused: false,
+      isMuted: true,
     };
   },
   methods: {
@@ -96,6 +102,10 @@ export default {
     },
     pause() {
       this.$refs.video_player.pause();
+    },
+    toggleMute() {
+      this.isMuted = !this.isMuted;
+      this.videoElement.muted = this.isMuted;
     },
   },
   computed: {
