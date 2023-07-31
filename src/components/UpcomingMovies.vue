@@ -56,6 +56,9 @@
               <data>{{ movie.vote_average }}</data>
             </div>
           </q-card-section>
+          <q-card-section class="overview">
+            {{ movie.overview }}
+          </q-card-section>
         </q-card>
       </div>
     </div>
